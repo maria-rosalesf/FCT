@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.6" prefWidth="830.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.RegistroController">
+      <AnchorPane fx:id="registroPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.6" prefWidth="830.4" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="838.0" style="-fx-background-color: #681D6A;">
+               <children>
+                  <Text fill="WHITE" layoutX="666.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro">
+                     <font>
+                        <Font name="Britannic Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text layoutX="43.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Personales">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <Separator layoutX="43.0" layoutY="153.0" prefHeight="0.0" prefWidth="750.0" />
+            <Text layoutX="43.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="288.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nombreRegistro" layoutX="43.0" layoutY="182.0" prefHeight="26.0" prefWidth="218.0" />
+            <TextField fx:id="apellidosRegistro" layoutX="288.0" layoutY="183.0" prefHeight="26.0" prefWidth="319.0" />
+            <Text layoutX="624.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="dniRegistro" layoutX="624.0" layoutY="184.0" />
+            <DatePicker fx:id="fechaNacimientoRegistro" layoutX="43.0" layoutY="246.0" />
+            <Text layoutX="43.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de nacimiento*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="247.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Especialidad">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="especialidadRegistro" layoutX="247.0" layoutY="246.0" prefHeight="26.0" prefWidth="216.0" />
+            <Text layoutX="483.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="telefonoRegistro" layoutX="483.0" layoutY="246.0" />
+            <Text layoutX="43.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos de Registro">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <Separator layoutX="43.0" layoutY="309.0" prefHeight="0.0" prefWidth="750.0" />
+            <TextField fx:id="correoRegistro" layoutX="43.0" layoutY="337.0" prefHeight="26.0" prefWidth="398.0" />
+            <Text layoutX="43.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electrónico*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="459.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="43.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <Separator layoutX="43.0" layoutY="399.0" prefHeight="0.0" prefWidth="750.0" />
+            <Text layoutX="43.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calle*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="calleRegistro" layoutX="43.0" layoutY="430.0" prefHeight="26.0" prefWidth="280.0" />
+            <Text layoutX="341.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="numeroRegistro" layoutX="334.0" layoutY="430.0" prefHeight="26.0" prefWidth="42.0" />
+            <Text layoutX="387.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código postal*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="cpRegistro" layoutX="387.0" layoutY="430.0" prefHeight="26.0" prefWidth="73.0" />
+            <Text layoutX="478.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ciudadRegistro" layoutX="478.0" layoutY="430.0" prefHeight="26.0" prefWidth="158.0" />
+            <Text layoutX="651.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provincia*">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="provinciaRegistro" layoutX="648.0" layoutY="430.0" prefHeight="26.0" prefWidth="137.0" />
+            <Pane fx:id="panelErrorRegistro" layoutX="224.0" layoutY="478.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="402.0" style="-fx-background-color: FAD9D9; -fx-background-radius: 10px;" visible="false">
+               <children>
+                  <Text fx:id="textoMensajeError" fill="#a90a0a" layoutX="4.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="394.13671875" />
+               </children>
+            </Pane>
+            <Button fx:id="botonRegistrar" layoutX="436.0" layoutY="522.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#altaNutricionista" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: #9B5C9E;" text="Aceptar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonCancelarRegistro" layoutX="256.0" layoutY="522.0" mnemonicParsing="false" onAction="#cancelarRegistro" prefHeight="27.0" prefWidth="156.0" style="-fx-background-color: grey;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="contraseniaRegistro" layoutX="458.0" layoutY="337.0" prefHeight="26.0" prefWidth="251.0" />
+            <CheckBox fx:id="mostrarContraseniaCheck" layoutX="585.0" layoutY="363.0" mnemonicParsing="false" onAction="#mostrarContrasenia" text="Mostrar contraseña" />
+         </children>
+      </AnchorPane>
+</AnchorPane>

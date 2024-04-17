@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.LoginController">
+   <children>
+      <AnchorPane fx:id="panelInicio" prefHeight="490.0" prefWidth="336.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.7999999999999545" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="590.0" prefWidth="115.0" style="-fx-background-color: #2CA08C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  
+                  <Button fx:id="botonPacientes" layoutX="-2.0" layoutY="235.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="114.0" style="-fx-background-color: #2CA08C;" textFill="WHITE" AnchorPane.leftAnchor="-0.8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botonDietas" layoutX="-2.0" layoutY="295.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="114.0" style="-fx-background-color: #2CA08C;" textFill="WHITE" AnchorPane.leftAnchor="-0.8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CUTLERY" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botonPagos" layoutX="-2.0" layoutY="355.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="114.0" style="-fx-background-color: #2CA08C;" textFill="WHITE" AnchorPane.leftAnchor="-0.8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="20" text="" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botonConfiguracion" layoutX="-2.0" layoutY="415.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="114.0" style="-fx-background-color: #2CA08C;" textFill="WHITE" AnchorPane.leftAnchor="-0.8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="COG" size="20" smooth="false" wrappingWidth="17.14285659790039" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botonSignOut" layoutX="-2.0" layoutY="514.0" mnemonicParsing="false" onAction="#salir" prefHeight="76.0" prefWidth="114.0" style="-fx-background-color: #2CA08C;" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="18" smooth="false" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botonHome" layoutX="-0.8" layoutY="115.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="114.0" style="-fx-background-color: #2CA08C;" textFill="WHITE" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="115.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="25" smooth="false" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botonCitas" layoutX="-1.0" layoutY="175.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="114.0" style="-fx-background-color: #2CA08C;" textFill="WHITE" AnchorPane.leftAnchor="-0.8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" size="20" smooth="false" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="panelLogin" layoutY="0.8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="937.0" style="-fx-background-color: #BAE7DF;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="478.0" style="-fx-background-color: #2CA08C;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="correoLogin" layoutX="111.0" layoutY="270.0" prefHeight="26.0" prefWidth="269.0" promptText="Correo electrónico" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="163.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="135.0" layoutY="188.0" text="Bienvenido a NutriKoko" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="118.0" layoutY="218.0" text="Nutrición inteligente para una vida brillante" textFill="WHITE">
+                     <font>
+                        <Font name="Baskerville Old Face" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="botonEntrarLogin" layoutX="104.0" layoutY="408.0" mnemonicParsing="false" onAction="#entrarEnAplicacion" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #278B6F;" text="Entrar" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                 <Pane fx:id="panelErrorLogin" layoutX="88.0" layoutY="460.0" prefHeight="48.0" prefWidth="299.0" style="-fx-background-color: FAD9D9; -fx-background-radius: 10px;" visible="false">
+                     <children>
+                        <Text fx:id="textoError" fill="#9c1616" layoutX="8.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credenciales inválidas. Por favor, inténtalo de nuevo." textAlignment="CENTER" wrappingWidth="282.9367370605469" />
+                     </children>
+                  </Pane>
+                  <PasswordField fx:id="contraseniaLogin" layoutX="111.0" layoutY="314.0" prefHeight="26.0" prefWidth="270.0" promptText="Contraseña" />
+                  <CheckBox fx:id="mostrarContraseniaCheck" layoutX="111.0" layoutY="359.0" mnemonicParsing="false" onAction="#mostrarContrasenia" text="Mostrar contraseña" textFill="WHITE" />               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

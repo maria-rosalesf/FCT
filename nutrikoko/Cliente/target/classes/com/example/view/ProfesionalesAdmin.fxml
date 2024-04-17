@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.ProfesionalesController">
+   <Pane prefHeight="69.0" prefWidth="800.0">
+      <children>
+         <TextField fx:id="barraBusqueda" layoutX="576.0" layoutY="28.0" prefHeight="25.0" prefWidth="196.0" promptText="Buscar..." />
+      </children>
+   </Pane>
+   <Pane prefHeight="82.0" prefWidth="800.0" style="-fx-background-color: #681D6A;">
+      <children>
+      
+          <Label alignment="CENTER_RIGHT" layoutX="549.0" layoutY="30.0" style="-fx-font-weight: bold;" text="Lista de Profesionales" textFill="WHITE">
+              <font>
+                  <Font name="Britannic Bold" size="20.0" />
+              </font>
+          </Label>
+      </children>
+   </Pane>
+
+    <ScrollPane style="-fx-background-color: blue;" VBox.vgrow="ALWAYS">
+        <VBox prefHeight="444.0" prefWidth="798.0" spacing="10">
+         <children>
+            <Pane prefHeight="22.0" prefWidth="798.0" />
+            <TableView fx:id="tablaRegistroNutricionistas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="798.0">
+              <columns>
+                <TableColumn fx:id="campoId" prefWidth="53.59997636079788" text="ID" />
+                <TableColumn fx:id="campoNombre" prefWidth="96.80001449584961" text="Nombre" />
+                  <TableColumn fx:id="campoApellidos" prefWidth="129.59999084472656" text="Apellidos" />
+                  <TableColumn fx:id="campoCorreo" prefWidth="144.0" text="Correo" />
+                  <TableColumn fx:id="campoTelefono" prefWidth="144.0" text="Telefono" />
+                  <TableColumn fx:id="campoDNI" prefWidth="97.60009765625" text="DNI" />
+                  <TableColumn fx:id="campoOpciones" prefWidth="97.60009765625" text="Opciones" />
+              </columns>
+            </TableView>
+         </children></VBox>
+    </ScrollPane>
+
+</VBox>
